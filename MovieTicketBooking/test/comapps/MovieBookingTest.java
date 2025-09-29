@@ -2,12 +2,19 @@ package comapps;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
+
+/**
+ * Variable and method names aren't descriptive enough.
+ * Give variables and methods more appropriate names.
+ * Code Reviewed by: Christine Marasigan
+ */
 
 @TestMethodOrder(OrderAnnotation.class)
 class MovieBookingTest {
@@ -145,8 +152,16 @@ class MovieBookingTest {
             System.out.println("There are " + avail
                     + " seats left for " + showtime + " slot.");
         }
+
         assertEquals(updatedAvailableTickets,
                 mbs.checkAvailability("10:00 AM"));
+        assertEquals(availableTickets,
+                mbs.checkAvailability("1:00 PM"));
+        assertEquals(availableTickets,
+                mbs.checkAvailability("4:00 PM"));
+        assertEquals(availableTickets,
+                mbs.checkAvailability("6:00 PM"));
+
     }
 
 }

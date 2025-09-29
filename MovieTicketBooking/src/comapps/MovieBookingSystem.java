@@ -3,6 +3,11 @@
  */
 package comapps;
 
+/**
+ * Everything looks good functionally and checkstyle-wise.
+ * Code Reviewed by: Christine Marasigan
+ */
+
 public class MovieBookingSystem extends BookingSystem {
     /** array that stores list of showtimes. */
     private String[] showTimes = {"10:00 AM", "1:00 PM", "4:00 PM", "6:00 PM"};

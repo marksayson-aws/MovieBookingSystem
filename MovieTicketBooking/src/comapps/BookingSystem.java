@@ -1,5 +1,10 @@
 package comapps;
 
+/**
+ * Everything looks good functionally and checkstyle-wise.
+ * Code Reviewed by: Christine Marasigan
+ */
+
 public abstract class BookingSystem {
     /**
      * An abstract method that checks if there
